@@ -12,11 +12,25 @@ body {
 }
 
 #res {
-	color: #D8DEE9;
+	color: #BF616A;
 	text-align: center;
 	align: center;
 	font-family: 'text';
-	font-size: 350%;
+	font-size: 450%;
+	position: fixed;
+	left: 50%;
+	right: 50%;
+}
+.slide-left {
+		animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-left {
+	  0% {
+	      transform: translateX(+100px);
+        }
+	  100% {
+	      transform: translateX(0px);
+        }
 }
 
 table {
